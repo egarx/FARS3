@@ -2,7 +2,7 @@
 title: "FARS3"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{model_details}
+  %\VignetteIndexEntry{FARS3}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -13,6 +13,7 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
+
 
 The functions programmed using data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System (FARS), which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes. 
 
@@ -148,7 +149,7 @@ fars_map_state <- function(state.num, year) {
 
 ### Function's Example. It takes state #49 regarding 2015.
 
-```{r error=FALSE, warning=FALSE, message=FALSE}
+```{r error=FALSE, warning=FALSE, message=FALSE, results='hide'}
 
 fars_map_state(49, 2015)
 
