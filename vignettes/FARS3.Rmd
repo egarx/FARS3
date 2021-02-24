@@ -22,10 +22,10 @@ The functions programmed using data from the US National Highway Traffic Safety 
 
 ```{r error=FALSE, warning=FALSE, message=FALSE, results='hide'}
 
-library(dplyr)
-library(readr)
-library(magrittr)
-library(tidyr)
+#library(dplyr)
+#library(readr)
+#library(magrittr)
+#library(tidyr)
 
 ```
 
@@ -44,14 +44,6 @@ fars_read <- function(filename) {
 
 ```
 
-### Function's example:
-
-```{r error=FALSE, warning=FALSE, message=FALSE, results='hide'}
-
-filename <- "accident_2013.csv.bz2"
-data <- fars_read(filename)
-
-```
 
 ### Function 2. Make data file name
 
@@ -61,14 +53,6 @@ make_filename <- function(year) {
   year <- as.integer(year)
   sprintf("accident_%d.csv.bz2", year)
 }
-
-```
-
-### Function's Example
-
-```{r error=FALSE, warning=FALSE, message=FALSE, results='hide'}
-
-make_filename(2015)
 
 ```
 
@@ -92,14 +76,6 @@ fars_read_years <- function(years) {
 
 ```
 
-### Function's Example
-
-```{r error=FALSE, warning=FALSE, message=FALSE, results='hide'}
-
-fars_read_years(2013)
-
-```
-
 ### Function 4. Summarize FARS data by years.Makes a summary count per month in particular years.This function summarizes yearly accidents data, by month.
 
 ```{r error=FALSE, warning=FALSE, message=FALSE, results='hide'}
@@ -112,14 +88,6 @@ fars_summarize_years <- function(years) {
 
 ```
 
-### Function's Examples
-
-```{r error=FALSE, warning=FALSE, message=FALSE, results='hide'}
-
-fars_summarize_years(2015)
-fars_summarize_years(c(2015, 2014))
-
-```
 
 ### Function 5. Display accidents map by state and year. Displays a plot with a state map including the accidents location by year.
 
@@ -148,10 +116,3 @@ fars_map_state <- function(state.num, year) {
 
 ```
 
-### Function's Example. It takes state #49 regarding 2015.
-
-```{r error=FALSE, warning=FALSE, message=FALSE, results='hide'}
-
-fars_map_state(49, 2015)
-
-```
