@@ -5,6 +5,7 @@ vignette: >
   %\VignetteIndexEntry{FARS3}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{rmarkdown::render}
 ---
 
 ```{r, include = FALSE}
