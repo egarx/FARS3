@@ -2,6 +2,8 @@
 # FARS3
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.com/egarx/FARS3.svg?branch=master)](https://travis-ci.com/egarx/FARS3)
+[![R-CMD-check](https://github.com/egarx/FARS3/workflows/R-CMD-check/badge.svg)](https://github.com/egarx/FARS3/actions)
 <!-- badges: end -->
 
 The functions programmed using data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System (FARS), which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes. 
